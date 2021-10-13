@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Take Your Candy :)</title>
+    <script>
+   var clickers = {
+    candy:0
+};
+    function thing_clicked(thing){
+        clicker[thing]++;
+}
+    function updatecount(){
+         setInterval(() =>{
+         document.querySelector("#candy").innerHTML = "You Have "+clicker.candy+" candy"    
+        },50);
+}
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="updatecount()">
+    <h1 id="candy">You Have 0 Candy</h1>
+    <button onclick="things_clicked('candy')">Get 1 Candy :)</button>
+</body>
+</html>
